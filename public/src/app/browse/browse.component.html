@@ -1,0 +1,27 @@
+<h1>Browse the Ledger</h1>
+<div *ngFor="let leadger of leadgers">
+  <table>
+    <thead>
+      <tr>
+        <th>ShintoCoin Ledger</th>
+      </tr>
+      <tr>
+        <th>Action</th>
+        <th>Amount</th>
+        <th>Value</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{leadger.action}}</td>
+        <td>{{leadger.amount}}</td>
+        <td>{{leadger.value}}</td>
+        <td>
+          <button [routerLink]="['/transaction/' ,leadger.id]" class="btn btn-light form-control">detail</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

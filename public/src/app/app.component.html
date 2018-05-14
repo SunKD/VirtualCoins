@@ -1,0 +1,22 @@
+<div class="row nav">
+  <div class="col-md-2">
+    <img src="http://www.pngpix.com/download/16336">
+  </div>
+  <div class="col-md-2">
+    <button [routerLink]="['/home']" class="btn btn-light form-control">Home</button>
+  </div>
+  <div class="col-md-2">
+    <button [routerLink]="['/mine']" class="btn btn-light form-control">Mine Coins</button>
+  </div>
+  <div class="col-md-2">
+    <button [routerLink]="['/buy']" class="btn btn-light form-control">Buy Coins</button>
+  </div>
+  <div class="col-md-2">
+    <button [routerLink]="['/sell']" class="btn btn-light form-control">Sell Coins</button>
+  </div>
+  <div class="col-md-2">
+    <button [routerLink]="['/browse']" class="btn btn-light form-control">Browse Ledger</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
